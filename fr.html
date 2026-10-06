@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Easescan - Application de scan automobile facile pour appareils Android. Diagnostic rapide des codes de panne hors connexion.">
+    <meta name="keywords" content="Easescan, scanner, obd2, diagnostic automobile, application android">
+    <title>Easescan - Scan Automobile Facile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="text-blue-600 font-bold" style="font-family: 'Audiowide', cursive; font-size: 30px;">Easescan</div>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="#hero" class="text-gray-700 hover:text-blue-600 transition">Accueil</a>
+                    <a href="#features" class="text-gray-700 hover:text-blue-600 transition">Fonctionnalités</a>
+                    <a href="#device" class="text-gray-700 hover:text-blue-600 transition">Appareil</a>
+                    <a href="#glossary" class="text-gray-700 hover:text-blue-600 transition">Glossaire</a>
+                    <a href="#app-structure" class="text-gray-700 hover:text-blue-600 transition">Application</a>
+                    <a href="#download" class="text-gray-700 hover:text-blue-600 transition">Télécharger</a>
+                    <a href="#faq" class="text-gray-700 hover:text-blue-600 transition">FAQ</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 transition">Contact</a>
+                    
+                    <!-- Language Selector -->
+                    <div class="flex items-center space-x-2 ml-4">
+                        <button onclick="switchLanguage('en')" class="px-3 py-1 rounded bg-gray-200 text-gray-700 text-sm hover:bg-gray-300">EN</button>
+                        <button onclick="switchLanguage('es')" class="px-3 py-1 rounded bg-gray-200 text-gray-700 text-sm hover:bg-gray-300">ES</button>
+                        <button onclick="switchLanguage('fr')" class="px-3 py-1 rounded bg-blue-600 text-white text-sm">FR</button>
+                    </div>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 py-3 space-y-2">
+                <a href="#hero" class="block text-gray-700 hover:text-blue-600">Accueil</a>
+                <a href="#features" class="block text-gray-700 hover:text-blue-600">Fonctionnalités</a>
+                <a href="#device" class="block text-gray-700 hover:text-blue-600">Appareil</a>
+                <a href="#glossary" class="block text-gray-700 hover:text-blue-600">Glossaire</a>
+                <a href="#app-structure" class="block text-gray-700 hover:text-blue-600">Application</a>
+                <a href="#download" class="block text-gray-700 hover:text-blue-600">Télécharger</a>
+                <a href="#faq" class="block text-gray-700 hover:text-blue-600">FAQ</a>
+                <a href="#contact" class="block text-gray-700 hover:text-blue-600">Contact</a>
+                <div class="flex space-x-2 pt-2">
+                    <button onclick="switchLanguage('en')" class="px-3 py-1 rounded bg-gray-200 text-gray-700 text-sm">EN</button>
+                    <button onclick="switchLanguage('es')" class="px-3 py-1 rounded bg-gray-200 text-gray-700 text-sm">ES</button>
+                    <button onclick="switchLanguage('fr')" class="px-3 py-1 rounded bg-blue-600 text-white text-sm">FR</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="pt-20 pb-16 bg-gradient-to-b from-blue-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Scan Automobile Facile</h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Diagnostiquez votre véhicule rapidement avec notre application facile à utiliser pour Android. Obtenez des codes de panne avec descriptions, causes possibles et solutions - tout hors connexion.</p>
+                <div class="mt-8">
+                    <a href="#download" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">Télécharger Maintenant</a>
+                </div>
+            </div>
+            
+            <!-- Device Images -->
+            <div class="flex flex-wrap justify-center items-center gap-6 mt-12">
+                <div class="w-full md:w-1/3 lg:w-1/4">
+                    <img src="Images/DSCN1978.JPG" alt="Appareil Scanner Easescan" class="rounded-lg shadow-lg w-full h-auto object-cover">
+                </div>
+                <div class="w-full md:w-1/3 lg:w-1/4">
+                    <img src="Images/Tablet A20_2.jpg" alt="Tablette avec Application Easescan" class="rounded-lg shadow-lg w-full h-auto object-cover">
+                </div>
+                <div class="w-full md:w-1/3 lg:w-1/4">
+                    <img src="Images/Tablet Samsung.jpg" alt="Tablette Samsung avec Easescan" class="rounded-lg shadow-lg w-full h-auto object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Pour Choisir Easescan?</h2>
+            
+            <!-- Feature 1 - Left Image -->
+            <div class="flex flex-col md:flex-row items-center gap-8 mb-16">
+                <div class="w-full md:w-1/2 flex justify-center">
+                    <div class="w-64 h-64 rounded-full overflow-hidden shadow-lg">
+                        <img src="Images/DSCN1978.JPG" alt="Appareil Bluetooth Scanner" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Appariement Bluetooth Facile</h3>
+                    <p class="text-gray-600">Associez votre appareil rapidement et facilement. Contrairement aux autres applications, Easescan ne détourne pas votre Bluetooth après fermeture, vous permettant de l'utiliser avec d'autres applications.</p>
+                </div>
+            </div>
+            
+            <!-- Feature 2 - Right Image -->
+            <div class="flex flex-col md:flex-row-reverse items-center gap-8 mb-16">
+                <div class="w-full md:w-1/2 flex justify-center">
+                    <div class="w-64 h-64 rounded-full overflow-hidden shadow-lg">
+                        <img src="Images/Tablet A20_2.jpg" alt="Fonctionnement Hors Ligne" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Fonctionne Hors Ligne</h3>
+                    <p class="text-gray-600">Pas besoin de connexion internet. Obtenez des codes de panne, descriptions, causes et solutions n'importe où, n'importe quand. Notre base de données est intégrée dans l'application.</p>
+                </div>
+            </div>
+            
+            <!-- Feature 3 - Left Image -->
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="w-full md:w-1/2 flex justify-center">
+                    <div class="w-64 h-64 rounded-full overflow-hidden shadow-lg">
+                        <img src="Images/Tablet Samsung.jpg" alt="Support Multilingue" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Support Multilingue</h3>
+                    <p class="text-gray-600">Disponible en anglais, espagnol et français avec des traductions claires en langage simple. Plus de jargon technique confus ou de mauvaises traductions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Device Information Section -->
+    <section id="device" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">À Propos de Notre Appareil</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Excellence Technique</h3>
+                    <p class="text-gray-600">Notre scanner utilise un microcontrôleur américain (Série 18C) connu pour sa robustesse, fiabilité et durabilité. Testé exhaustivement dans des conditions adverses.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Compatibilité Universelle</h3>
+                    <p class="text-gray-600">Fonctionne avec d'autres logiciels de scan. Si vous n'aimez pas notre application, vous pouvez utiliser l'appareil avec n'importe quelle autre application OBD2.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Pas d'Abonnement Requis</h3>
+                    <p class="text-gray-600">Achat unique. Pas de frais mensuels ou annuels. Pas de coûts cachés. Achetez-le, possédez-le, utilisez-le pour toujours.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Couverture Véhicules</h3>
+                    <p class="text-gray-600">Couvre près de 100% des véhicules en Amérique du Nord à partir de 2008. Fonctionne avec les marques américaines, asiatiques, coréennes et européennes.</p>
+                </div>
+            </div>
+            
+            <!-- Supported Brands -->
+            <div class="mt-12">
+                <h3 class="text-2xl font-semibold text-center text-gray-900 mb-6">Marques de Véhicules Supportées</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <p class="font-medium">Ford, GMC, Jeep</p>
+                        <p class="text-sm text-gray-500">Américaines</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <p class="font-medium">Toyota, Honda, Nissan</p>
+                        <p class="text-sm text-gray-500">Asiatiques</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <p class="font-medium">Kia, Hyundai</p>
+                        <p class="text-sm text-gray-500">Coréennes</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <p class="font-medium">VW, Audi, BMW, Volvo</p>
+                        <p class="text-sm text-gray-500">Européennes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Glossary Section -->
+    <section id="glossary" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Glossaire des Termes</h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <h4 class="font-semibold text-blue-600">PRESSION BAROMÉTRIQUE</h4>
+                    <p class="text-gray-600 text-sm">Lecture de la pression atmosphérique utilisée par l'ordinateur du moteur pour les calculs de carburant.</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <h4 class="font-semibold text-blue-600">DLC</h4>
+                    <p class="text-gray-600 text-sm">Connecteur de Liaison de Données - Le port OBD2 où vous connectez le scanner.</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <h4 class="font-semibold text-blue-600">DTC</h4>
+                    <p class="text-gray-600 text-sm">Code de Problème de Diagnostic - Le code de panne stocké dans l'ordinateur de votre véhicule.</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <h4 class="font-semibold text-blue-600">ECM</h4>
+                    <p class="text-gray-600 text-sm">Module de Contrôle Moteur - L'ordinateur principal qui contrôle le moteur.</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <h4 class="font-semibold text-blue-600">PRESSION DE CARBURANT</h4>
+                    <p class="text-gray-600 text-sm">La pression du carburant dans le système de carburant, critique pour le bon fonctionnement du moteur.</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <h4 class="font-semibold text-blue-600">IAT</h4>
+                    <p class="text-gray-600 text-sm">Température de l'Air d'Admission - Capteur mesurant la température de l'air entrant dans le moteur.</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <h4 class="font-semibold text-blue-600">BANQUE 1 À LONG TERME</h4>
+                    <p class="text-gray-600 text-sm">Ajustements de carburant à long terme effectués par l'ordinateur au fil du temps.</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <h4 class="font-semibold text-blue-600">MAF</h4>
+                    <p class="text-gray-600 text-sm">Débit d'Air Massique - Capteur mesurant la quantité d'air entrant dans le moteur.</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <h4 class="font-semibold text-blue-600">MAP</h4>
+                    <p class="text-gray-600 text-sm">Pression Absolue du Collecteur - Capteur mesurant la pression dans le collecteur d'admission.</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <h4 class="font-semibold text-blue-600">OBD2</h4>
+                    <p class="text-gray-600 text-sm">Diagnostic de Bord - Système de diagnostic standard pour les véhicules.</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <h4 class="font-semibold text-blue-600">RPM</h4>
+                    <p class="text-gray-600 text-sm">Révolutions Par Minute - Mesure de la vitesse du moteur.</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <h4 class="font-semibold text-blue-600">SAE</h4>
+                    <p class="text-gray-600 text-sm">Société des Ingénieurs de l'Automobile - Organisation établissant les normes automobiles.</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <h4 class="font-semibold text-blue-600">BANQUE 1 À COURT TERME</h4>
+                    <p class="text-gray-600 text-sm">Ajustements de carburant à court terme effectués par l'ordinateur en temps réel.</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <h4 class="font-semibold text-blue-600">TPS</h4>
+                    <p class="text-gray-600 text-sm">Capteur de Position de l'Accélérateur - Capteur mesurant la position du papillon.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Structure Section -->
+    <section id="app-structure" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Structure de l'Application</h2>
+            
+            <div class="text-center mb-8">
+                <p class="text-gray-600">L'application s'affiche uniquement en mode portrait et dispose d'un système de menu intuitif.</p>
+            </div>
+            
+            <!-- Main Menu Items -->
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Options du Menu Principal</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2">•</span>
+                            <div>
+                                <strong>Lire DTC</strong>
+                                <p class="text-sm text-gray-600">Lire et afficher les codes de problème de diagnostic avec descriptions.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2">•</span>
+                            <div>
+                                <strong>Effacer DTC</strong>
+                                <p class="text-sm text-gray-600">Effacer/réinitialiser les codes de problème de diagnostic du véhicule.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2">•</span>
+                            <div>
+                                <strong>Données en Direct</strong>
+                                <p class="text-sm text-gray-600">Voir les données de capteurs en temps réel de votre véhicule.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2">•</span>
+                            <div>
+                                <strong>Info Véhicule (VIN)</strong>
+                                <p class="text-sm text-gray-600">Afficher le numéro d'identification du véhicule et les informations.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2">•</span>
+                            <div>
+                                <strong>Moniteur Inspection/Entretien</strong>
+                                <p class="text-sm text-gray-600">Vérifier l'état de préparation du système d'émissions.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2">•</span>
+                            <div>
+                                <strong>Moniteur Capteur Oxygène</strong>
+                                <p class="text-sm text-gray-600">Surveiller les données du capteur d'oxygène et les résultats des tests.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2">•</span>
+                            <div>
+                                <strong>Données Figées</strong>
+                                <p class="text-sm text-gray-600">Voir les données capturées lorsqu'un code de panne a été stocké.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2">•</span>
+                            <div>
+                                <strong>À Propos</strong>
+                                <p class="text-sm text-gray-600">Informations sur l'application et détails de version.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Options de la Barre Inférieure</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2">•</span>
+                            <div>
+                                <strong>Menu</strong>
+                                <p class="text-sm text-gray-600">Retourner au menu principal depuis n'importe quel écran.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2">•</span>
+                            <div>
+                                <strong>Paramètres</strong>
+                                <p class="text-sm text-gray-600">Configurer les unités (métriques/impériales) et sélectionner les capteurs à surveiller en données en direct.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2">•</span>
+                            <div>
+                                <strong>Langues</strong>
+                                <p class="text-sm text-gray-600">Sélectionner entre anglais (par défaut), espagnol ou français.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="py-16 bg-blue-600">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Télécharger Easescan</h2>
+            <p class="text-blue-100 mb-8 max-w-2xl mx-auto">Obtenez l'application Easescan pour votre appareil Android. Disponible sur plusieurs plateformes.</p>
+            
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#" class="inline-flex items-center bg-white text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+                    <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h-2v-6h2v6zm-1-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm5 7h-2v-6h2v6zm-1-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"/>
+                    </svg>
+                    Télécharger du Site Web
+                </a>
+                <a href="#" class="inline-flex items-center bg-white text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+                    <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M3 20.5v-17c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v17c0 .83-.67 1.5-1.5 1.5S3 21.33 3 20.5zm6-17c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v17c0 .83-.67 1.5-1.5 1.5S9 21.33 9 20.5v-17zm6 0c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v17c0 .83-.67 1.5-1.5 1.5S15 21.33 15 20.5v-17z"/>
+                    </svg>
+                    Google Play Store
+                </a>
+                <a href="#" class="inline-flex items-center bg-white text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+                    <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    </svg>
+                    Amazon Appstore
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Questions Fréquentes</h2>
+            
+            <div class="space-y-4">
+                <div class="faq-item border rounded-lg">
+                    <button class="faq-question w-full text-left p-4 flex justify-between items-center bg-gray-50 hover:bg-gray-100">
+                        <span class="font-medium">Fonctionne-t-il avec les appareils ELM327 génériques?</span>
+                        <svg class="faq-icon w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden p-4 bg-white">
+                        <p class="text-gray-600">Non. Easescan ne fonctionne pas avec les appareils ELM327 génériques. Il ne fonctionne qu'avec l'appareil Easescan pour assurer des performances optimales et une fiabilité.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item border rounded-lg">
+                    <button class="faq-question w-full text-left p-4 flex justify-between items-center bg-gray-50 hover:bg-gray-100">
+                        <span class="font-medium">Quelles versions d'Android sont compatibles?</span>
+                        <svg class="faq-icon w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden p-4 bg-white">
+                        <p class="text-gray-600">Easescan fonctionne avec Android 10 et plus (environ à partir de 2021). Il a été testé jusqu'à Android 16 (2026).</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item border rounded-lg">
+                    <button class="faq-question w-full text-left p-4 flex justify-between items-center bg-gray-50 hover:bg-gray-100">
+                        <span class="font-medium">Avec quelles années de véhicules fonctionne-t-il?</span>
+                        <svg class="faq-icon w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden p-4 bg-white">
+                        <p class="text-gray-600">Easescan fonctionne avec les véhicules ayant des connecteurs de diagnostic OBD2 et le protocole CAN, à partir de 2008.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item border rounded-lg">
+                    <button class="faq-question w-full text-left p-4 flex justify-between items-center bg-gray-50 hover:bg-gray-100">
+                        <span class="font-medium">Où puis-je acheter l'appareil?</span>
+                        <svg class="faq-icon w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden p-4 bg-white">
+                        <p class="text-gray-600">Vous pouvez acheter l'appareil Easescan sur Amazon. Visitez notre boutique Amazon pour commander le vôtre aujourd'hui.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item border rounded-lg">
+                    <button class="faq-question w-full text-left p-4 flex justify-between items-center bg-gray-50 hover:bg-gray-100">
+                        <span class="font-medium">Easescan est-il une marque déposée?</span>
+                        <svg class="faq-icon w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden p-4 bg-white">
+                        <p class="text-gray-600">Oui, le logo Easescan (fond bleu avec silhouette de véhicule) et le mot "Easescan" sont des marques déposées.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item border rounded-lg">
+                    <button class="faq-question w-full text-left p-4 flex justify-between items-center bg-gray-50 hover:bg-gray-100">
+                        <span class="font-medium">L'appareil peut-il être utilisé avec d'autres applications?</span>
+                        <svg class="faq-icon w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden p-4 bg-white">
+                        <p class="text-gray-600">Oui, l'appareil Easescan peut être utilisé avec d'autres applications de scan. Il n'est pas limité à une utilisation uniquement avec notre application.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Contactez-nous</h2>
+            
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <form id="contact-form" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Nom</label>
+                        <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                        <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                        <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition">Envoyer Message</button>
+                </form>
+                <p class="mt-4 text-center text-gray-600">Ou envoyez-nous un email directement à: <a href="mailto:info@easescan.com" class="text-blue-600 hover:underline">info@easescan.com</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="text-blue-400 font-bold text-2xl mb-4" style="font-family: 'Audiowide', cursive;">Easescan</div>
+                    <p class="text-gray-400">Scan automobile facile pour tous. Diagnostiquez votre véhicule en toute confiance.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Liens Rapides</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#hero" class="text-gray-400 hover:text-white transition">Accueil</a></li>
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition">Fonctionnalités</a></li>
+                        <li><a href="#download" class="text-gray-400 hover:text-white transition">Télécharger</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-white transition">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Suivez-nous</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M13.167 14.107c0 1.917-1.167 3.263-3.167 3.263-2 0-3.167-1.346-3.167-3.263V8.893c0-1.917 1.167-3.263 3.167-3.263 2 0 3.167 1.346 3.167 3.263v5.214zm-3.167-7.214c-1.1 0-1.667.746-1.667 1.746v5.214c0 1 .567 1.746 1.667 1.746s1.667-.746 1.667-1.746V8.639c0-1-.567-1.746-1.667-1.746zm-7 2.5H.5v-2h2.5V5h2v2.393h2.5v2H5v2.5H3V9.393zm18.5 4.607h-2.5v2.5h-2v-2.5h-2.5v-2h2.5V9.5h2v2.5h2.5v2zM10 18c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8zm0-14c-3.314 0-6 2.686-6 6s2.686 6 6 6 6-2.686 6-6-2.686-6-6-6z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 Easescan. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

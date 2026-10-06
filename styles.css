@@ -1,0 +1,168 @@
+/* Custom Styles for Easescan Website */
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom font for logo */
+@font-face {
+    font-family: 'Audiowide';
+    src: url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+}
+
+/* FAQ Accordion Styles */
+.faq-item {
+    transition: all 0.3s ease;
+}
+
+.faq-question {
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-answer.show {
+    max-height: 500px;
+    padding: 1rem;
+}
+
+.faq-icon {
+    transition: transform 0.3s ease;
+}
+
+.faq-icon.rotate {
+    transform: rotate(180deg);
+}
+
+/* Mobile menu transition */
+#mobile-menu {
+    transition: max-height 0.3s ease;
+}
+
+#mobile-menu.hidden {
+    max-height: 0;
+    overflow: hidden;
+}
+
+#mobile-menu:not(.hidden) {
+    max-height: 500px;
+}
+
+/* Image hover effects */
+img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Button hover effects */
+button {
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+/* Form input focus styles */
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Section spacing */
+section {
+    scroll-margin-top: 80px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+/* Glossary card hover effect */
+.bg-gray-50:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+}
+
+/* Feature circle image styling */
+.rounded-full {
+    border: 4px solid #3b82f6;
+}
+
+/* Navigation link underline effect (disabled to ensure text stability) */
+nav a {
+    position: relative;
+    text-decoration: none !important;
+}
+
+/* Language button active state */
+button.bg-blue-600 {
+    cursor: default;
+}
+
+/* Contact form success message styling */
+.form-success {
+    background-color: #10b981;
+    color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    display: none;
+}
+
+.form-success.show {
+    display: block;
+}
+
+/* Loading spinner for form submission */
+.spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 1s ease-in-out infinite;
+    margin-left: 10px;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Footer social icon hover */
+footer a:hover {
+    transform: translateY(-3px);
+    transition: transform 0.2s ease;
+}
+
+/* Smooth section transitions */
+section {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
