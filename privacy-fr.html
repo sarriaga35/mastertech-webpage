@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Politique de confidentialité Easescan - Découvrez comment nous collectons, utilisons et protégeons vos informations lors de l'utilisation de l'application mobile Easescan.">
+    <meta name="keywords" content="Easescan, politique de confidentialité, protection des données, scanner OBD2, diagnostic automobile">
+    <title>Politique de Confidentialité - Easescan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="index.html" class="text-blue-600 font-bold" style="font-family: 'Audiowide', cursive; font-size: 30px;">Easescan</a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="index.html" class="text-gray-700">Accueil</a>
+                    <a href="index.html#features" class="text-gray-700">Fonctionnalités</a>
+                    <a href="index.html#device" class="text-gray-700">Appareil</a>
+                    <a href="index.html#download" class="text-gray-700">Télécharger</a>
+                    <a href="index.html#contact" class="text-gray-700">Contact</a>
+                    
+                    <!-- Language Selector -->
+                    <div class="flex items-center space-x-2 ml-4">
+                        <button onclick="switchLanguage('en')" class="px-3 py-1 rounded bg-gray-200 text-gray-700 text-sm">EN</button>
+                        <button onclick="switchLanguage('es')" class="px-3 py-1 rounded bg-gray-200 text-gray-700 text-sm">ES</button>
+                        <button onclick="switchLanguage('fr')" class="px-3 py-1 rounded bg-blue-600 text-white text-sm">FR</button>
+                    </div>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 py-3 space-y-2">
+                <a href="index.html" class="block text-gray-700 py-2">Accueil</a>
+                <a href="index.html#features" class="block text-gray-700 py-2">Fonctionnalités</a>
+                <a href="index.html#device" class="block text-gray-700 py-2">Appareil</a>
+                <a href="index.html#download" class="block text-gray-700 py-2">Télécharger</a>
+                <a href="index.html#contact" class="block text-gray-700 py-2">Contact</a>
+                <div class="flex items-center space-x-2 py-2">
+                    <button onclick="switchLanguage('en')" class="px-3 py-1 rounded bg-gray-200 text-gray-700 text-sm">EN</button>
+                    <button onclick="switchLanguage('es')" class="px-3 py-1 rounded bg-gray-200 text-gray-700 text-sm">ES</button>
+                    <button onclick="switchLanguage('fr')" class="px-3 py-1 rounded bg-blue-600 text-white text-sm">FR</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <h1 class="text-4xl font-bold text-gray-900 mb-4" style="font-family: 'Inter', sans-serif;">Politique de Confidentialité Easescan</h1>
+        <p class="text-gray-600 italic mb-8"><strong>Dernière mise à jour :</strong> Novembre 2026</p>
+
+        <p class="text-gray-700 mb-6">Mastertech CA, Inc. ("nous", "notre" ou "la Société") respecte votre vie privée. Cette Politique de Confidentialité explique comment nous collectons, utilisons, traitons et protégeons vos informations lorsque vous utilisez l'application mobile Easescan et son scanner matériel Bluetooth OBD2 associé.</p>
+
+        <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">1. Autorisations d'Application Requises</h2>
+        <p class="text-gray-700 mb-4">Pour qu'Easescan fonctionne correctement à ses différentes étapes, nous demandons l'accès aux fonctionnalités suivantes de l'appareil :</p>
+        <ul class="list-disc list-inside space-y-2 text-gray-700 mb-6">
+            <li><strong>Caméra :</strong> Requise exclusivement à l'étape 1 pour scanner votre code QR d'activation de licence. Les images ne sont pas enregistrées ni transmises ; le traitement du code QR est effectué localement sur votre appareil.</li>
+            <li><strong>Bluetooth et Appareils à Proximité :</strong> Requis à l'étape 2 pour découvrir et établir une communication locale avec le scanner matériel Easescan branché sur l'ECU de votre véhicule.</li>
+            <li><strong>Localisation :</strong> Sur les versions Android inférieures à 12, le système d'exploitation nécessite des autorisations de localisation pour scanner les appareils Bluetooth. <strong class="text-red-600">Easescan ne suit, ne collecte ni ne stocke votre localisation GPS sur nos serveurs en aucune circonstance.</strong></li>
+        </ul>
+
+        <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">2. Données que Nous Collectons et Comment Nous les Utilisons</h2>
+        <p class="text-gray-700 mb-4">Le fonctionnement de l'application est divisé en services locaux et services cloud, gérant les données suivantes :</p>
+        
+        <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">A. Activation de Licence (Firebase)</h3>
+        <p class="text-gray-700 mb-4">Lorsque vous scannez votre code QR et vous connectez au scanner Bluetooth, l'application lie votre matériel à votre appareil pour activer votre licence permanente. Au cours de ce processus, nous transmettons en toute sécurité ce qui suit à nos serveurs cloud (Google Firebase/Firestore) :</p>
+        <ul class="list-disc list-inside space-y-2 text-gray-700 mb-4">
+            <li>Le code d'activation (QR).</li>
+            <li>Le numéro de série interne du matériel Easescan.</li>
+            <li>Identifiants uniques de l'appareil (tels que SSAID / GUUID).</li>
+            <li>Dates de statut de garantie et de licence.</li>
+        </ul>
+        <p class="text-gray-700 italic mb-6"><em>Objectif :</em> Ces données sont utilisées strictement pour des mesures anti-piraterie, pour valider votre licence et pour accorder l'accès aux fonctionnalités premium.</p>
+
+        <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">B. Diagnostic Automobile et Assistance IA (Cloudflare)</h3>
+        <p class="text-gray-700 mb-4">Lorsque l'application lit les Codes de Panne de Diagnostic (DTC) de votre véhicule, ils sont traités localement. Cependant, si vous choisissez d'utiliser le bouton "Diagnostic IA" (étape 3), l'application enverra ce qui suit à notre infrastructure cloud (Cloudflare) :</p>
+        <ul class="list-disc list-inside space-y-2 text-gray-700 mb-4">
+            <li>Le code de panne spécifique (par exemple, P0165).</li>
+            <li>Votre Jeton de Licence Temporaire pour valider un abonnement actif.</li>
+        </ul>
+        <p class="text-gray-700 italic mb-6"><em>Objectif :</em> Cette information est utilisée exclusivement pour générer un rapport de diagnostic structuré (description, causes, symptômes et solutions). <strong class="text-blue-600">Nous n'associons pas les codes de panne de votre véhicule à votre identité personnelle, ni ne vendons d'historiques de diagnostic à des tiers.</strong></p>
+
+        <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">3. Services Tiers</h2>
+        <p class="text-gray-700 mb-4">Nous partageons des informations techniques strictement nécessaires avec les fournisseurs d'infrastructure suivants, qui se conforment tous à des normes de sécurité élevées :</p>
+        <ul class="list-disc list-inside space-y-2 text-gray-700 mb-4">
+            <li><strong>Google Play Services & Firebase (Google LLC) :</strong> Pour l'authentification de licence et la gestion de base de données en temps réel.</li>
+            <li><strong>Cloudflare, Inc. :</strong> Pour le traitement de notre API d'Intelligence Artificielle (Workers / Base de données D1) et la livraison de rapports de diagnostic.</li>
+        </ul>
+        <p class="text-gray-700 mb-6">Toute la transmission de données vers ces serveurs est effectuée via des connexions cryptées (HTTPS/TLS).</p>
+
+        <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">4. Rétention et Suppression des Données</h2>
+        <p class="text-gray-700 mb-6">Nous conservons votre enregistrement de licence active dans nos bases de données pendant la durée de vie du produit pour assurer que votre matériel et votre application fonctionnent ensemble sans problème. Si vous souhaitez révoquer votre licence, dissocier votre appareil mobile ou demander la suppression complète de vos identifiants de notre système, vous pouvez exercer votre droit en contactant notre équipe de support.</p>
+
+        <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">5. Modifications de cette Politique</h2>
+        <p class="text-gray-700 mb-6">Nous nous réservons le droit de mettre à jour cette politique occasionnellement pour refléter les améliorations de l'application ou les changements légaux. Nous vous informerons des changements significatifs via une mise à jour de l'application ou en modifiant la date en haut de cette page.</p>
+
+        <div class="bg-gray-100 rounded-lg p-6 mt-8">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-4">6. Contactez-Nous</h2>
+            <p class="text-gray-700 mb-4">Si vous avez des questions, des préoccupations ou des demandes concernant cette Politique de Confidentialité ou le traitement de vos données, veuillez nous contacter à :</p>
+            <p class="text-gray-700">
+                <strong>Mastertech CA, Inc.</strong><br>
+                Email : <a href="mailto:info@easescan.com" class="text-blue-600 hover:underline">info@easescan.com</a><br>
+                Site web : <a href="https://www.easescan.com" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">www.easescan.com</a>
+            </p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-center md:text-left mb-4 md:mb-0">
+                    <p class="text-gray-400">© 2026 Mastertech CA, Inc. Tous droits réservés.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="index.html" class="text-gray-400 hover:text-white transition-colors">Accueil</a>
+                    <a href="index.html#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        // Language switcher
+        function switchLanguage(lang) {
+            if (lang === 'en') {
+                window.location.href = 'privacy-en.html';
+            } else if (lang === 'es') {
+                window.location.href = 'privacy-es.html';
+            } else if (lang === 'fr') {
+                window.location.href = 'privacy-fr.html';
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+

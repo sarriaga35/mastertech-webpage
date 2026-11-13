@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Easescan Privacy Policy - Learn how we collect, use, and protect your information when using the Easescan mobile application.">
+    <meta name="keywords" content="Easescan, privacy policy, data protection, OBD2 scanner, automotive diagnostic">
+    <title>Privacy Policy - Easescan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="index.html" class="text-blue-600 font-bold" style="font-family: 'Audiowide', cursive; font-size: 30px;">Easescan</a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="index.html" class="text-gray-700">Home</a>
+                    <a href="index.html#features" class="text-gray-700">Features</a>
+                    <a href="index.html#device" class="text-gray-700">Device</a>
+                    <a href="index.html#download" class="text-gray-700">Download</a>
+                    <a href="index.html#contact" class="text-gray-700">Contact</a>
+                    
+                    <!-- Language Selector -->
+                    <div class="flex items-center space-x-2 ml-4">
+                        <button onclick="switchLanguage('en')" class="px-3 py-1 rounded bg-blue-600 text-white text-sm">EN</button>
+                        <button onclick="switchLanguage('es')" class="px-3 py-1 rounded bg-gray-200 text-gray-700 text-sm">ES</button>
+                        <button onclick="switchLanguage('fr')" class="px-3 py-1 rounded bg-gray-200 text-gray-700 text-sm">FR</button>
+                    </div>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 py-3 space-y-2">
+                <a href="index.html" class="block text-gray-700 py-2">Home</a>
+                <a href="index.html#features" class="block text-gray-700 py-2">Features</a>
+                <a href="index.html#device" class="block text-gray-700 py-2">Device</a>
+                <a href="index.html#download" class="block text-gray-700 py-2">Download</a>
+                <a href="index.html#contact" class="block text-gray-700 py-2">Contact</a>
+                <div class="flex items-center space-x-2 py-2">
+                    <button onclick="switchLanguage('en')" class="px-3 py-1 rounded bg-blue-600 text-white text-sm">EN</button>
+                    <button onclick="switchLanguage('es')" class="px-3 py-1 rounded bg-gray-200 text-gray-700 text-sm">ES</button>
+                    <button onclick="switchLanguage('fr')" class="px-3 py-1 rounded bg-gray-200 text-gray-700 text-sm">FR</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <h1 class="text-4xl font-bold text-gray-900 mb-4" style="font-family: 'Inter', sans-serif;">Easescan Privacy Policy</h1>
+        <p class="text-gray-600 italic mb-8"><strong>Last updated:</strong> November 2026</p>
+
+        <p class="text-gray-700 mb-6">Mastertech CA, Inc. ("we", "our", or "the Company") respects your privacy. This Privacy Policy explains how we collect, use, process, and protect your information when you use the Easescan mobile application and its associated OBD2 Bluetooth hardware scanner.</p>
+
+        <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">1. Required App Permissions</h2>
+        <p class="text-gray-700 mb-4">For Easescan to function correctly across its different stages, we request access to the following device features:</p>
+        <ul class="list-disc list-inside space-y-2 text-gray-700 mb-6">
+            <li><strong>Camera:</strong> Required exclusively in Stage 1 to scan your license activation QR code. Images are not saved or transmitted; QR code processing is done locally on your device.</li>
+            <li><strong>Bluetooth & Nearby Devices:</strong> Required in Stage 2 to discover and establish local communication with the Easescan hardware scanner plugged into your vehicle's ECU.</li>
+            <li><strong>Location:</strong> On Android versions below 12, the operating system requires location permissions to scan for Bluetooth devices. <strong class="text-red-600">Easescan does not track, collect, or store your GPS location on our servers under any circumstances.</strong></li>
+        </ul>
+
+        <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">2. Data We Collect and How We Use It</h2>
+        <p class="text-gray-700 mb-4">The application's operation is divided into local services and cloud services, handling the following data:</p>
+        
+        <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">A. License Activation (Firebase)</h3>
+        <p class="text-gray-700 mb-4">When you scan your QR code and connect to the Bluetooth scanner, the app links your hardware to your device to activate your permanent license. During this process, we securely transmit the following to our cloud servers (Google Firebase/Firestore):</p>
+        <ul class="list-disc list-inside space-y-2 text-gray-700 mb-4">
+            <li>The activation code (QR).</li>
+            <li>The internal serial number of the Easescan hardware.</li>
+            <li>Unique device identifiers (such as SSAID / GUUID).</li>
+            <li>Warranty and license status dates.</li>
+        </ul>
+        <p class="text-gray-700 italic mb-6"><em>Purpose:</em> This data is used strictly for anti-piracy measures, to validate your license, and to grant access to premium features.</p>
+
+        <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">B. Automotive Diagnostics & AI Assistance (Cloudflare)</h3>
+        <p class="text-gray-700 mb-4">When the app reads Diagnostic Trouble Codes (DTCs) from your vehicle, they are processed locally. However, if you choose to use the "AI Diagnostic" button (Stage 3), the app will send the following to our cloud infrastructure (Cloudflare):</p>
+        <ul class="list-disc list-inside space-y-2 text-gray-700 mb-4">
+            <li>The specific fault code (e.g., P0165).</li>
+            <li>Your temporary License Token to validate an active subscription.</li>
+        </ul>
+        <p class="text-gray-700 italic mb-6"><em>Purpose:</em> This information is used exclusively to generate a structured diagnostic report (description, causes, symptoms, and solutions). <strong class="text-blue-600">We do not associate your vehicle's fault codes with your personal identity, nor do we sell diagnostic histories to third parties.</strong></p>
+
+        <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">3. Third-Party Services</h2>
+        <p class="text-gray-700 mb-4">We share strictly necessary technical information with the following infrastructure providers, all of which comply with high security standards:</p>
+        <ul class="list-disc list-inside space-y-2 text-gray-700 mb-4">
+            <li><strong>Google Play Services & Firebase (Google LLC):</strong> For license authentication and real-time database management.</li>
+            <li><strong>Cloudflare, Inc.:</strong> For processing our Artificial Intelligence API (Workers / D1 Database) and delivering diagnostic reports.</li>
+        </ul>
+        <p class="text-gray-700 mb-6">All data transmission to these servers is conducted over encrypted connections (HTTPS/TLS).</p>
+
+        <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">4. Data Retention and Deletion</h2>
+        <p class="text-gray-700 mb-6">We keep your active license record in our databases for the lifetime of the product to ensure your hardware and app work seamlessly together. If you wish to revoke your license, unlink your mobile device, or request the complete deletion of your identifiers from our system, you may exercise your right by contacting our support team.</p>
+
+        <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">5. Changes to this Policy</h2>
+        <p class="text-gray-700 mb-6">We reserve the right to update this policy occasionally to reflect app improvements or legal changes. We will notify you of significant changes via an in-app update or by changing the date at the top of this page.</p>
+
+        <div class="bg-gray-100 rounded-lg p-6 mt-8">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-4">6. Contact Us</h2>
+            <p class="text-gray-700 mb-4">If you have any questions, concerns, or requests regarding this Privacy Policy or the handling of your data, please contact us at:</p>
+            <p class="text-gray-700">
+                <strong>Mastertech CA, Inc.</strong><br>
+                Email: <a href="mailto:info@easescan.com" class="text-blue-600 hover:underline">info@easescan.com</a><br>
+                Website: <a href="https://www.easescan.com" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">www.easescan.com</a>
+            </p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-center md:text-left mb-4 md:mb-0">
+                    <p class="text-gray-400">© 2026 Mastertech CA, Inc. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a>
+                    <a href="index.html#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        // Language switcher
+        function switchLanguage(lang) {
+            if (lang === 'en') {
+                window.location.href = 'privacy-en.html';
+            } else if (lang === 'es') {
+                window.location.href = 'privacy-es.html';
+            } else if (lang === 'fr') {
+                window.location.href = 'privacy-fr.html';
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+
