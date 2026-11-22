@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Términos de Servicio de Easescan - Conozca los términos y condiciones para usar la aplicación y hardware de Easescan.">
+    <meta name="keywords" content="Easescan, términos de servicio, términos y condiciones, legal, escáner OBD2">
+    <title>Términos de Servicio - Easescan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="index.html" class="text-blue-600 font-bold" style="font-family: 'Audiowide', cursive; font-size: 30px;">Easescan</a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="index.html" class="text-gray-700">Inicio</a>
+                    <a href="index.html#features" class="text-gray-700">Características</a>
+                    <a href="index.html#download" class="text-gray-700">Descargar</a>
+                    <a href="index.html#faq" class="text-gray-700">FAQ</a>
+                    <a href="index.html#contact" class="text-gray-700">Contacto</a>
+                    <a href="privacy-es.html" class="text-gray-700">Política de Privacidad</a>
+                    
+                    <!-- Language Selector -->
+                    <div class="flex items-center space-x-2 ml-4">
+                        <button onclick="switchLanguage('en')" class="px-3 py-1 rounded bg-gray-200 text-gray-700 text-sm">EN</button>
+                        <button onclick="switchLanguage('es')" class="px-3 py-1 rounded bg-blue-600 text-white text-sm">ES</button>
+                        <button onclick="switchLanguage('fr')" class="px-3 py-1 rounded bg-gray-200 text-gray-700 text-sm">FR</button>
+                    </div>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 py-3 space-y-2">
+                <a href="index.html" class="block text-gray-700 py-2">Inicio</a>
+                <a href="index.html#features" class="block text-gray-700 py-2">Características</a>
+                <a href="index.html#download" class="block text-gray-700 py-2">Descargar</a>
+                <a href="index.html#faq" class="block text-gray-700 py-2">FAQ</a>
+                <a href="index.html#contact" class="block text-gray-700 py-2">Contacto</a>
+                <a href="privacy-es.html" class="block text-gray-700 py-2">Política de Privacidad</a>
+                <div class="flex items-center space-x-2 py-2">
+                    <button onclick="switchLanguage('en')" class="px-3 py-1 rounded bg-gray-200 text-gray-700 text-sm">EN</button>
+                    <button onclick="switchLanguage('es')" class="px-3 py-1 rounded bg-blue-600 text-white text-sm">ES</button>
+                    <button onclick="switchLanguage('fr')" class="px-3 py-1 rounded bg-gray-200 text-gray-700 text-sm">FR</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="py-12 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-lg shadow-lg p-8 md:p-12">
+                <!-- Header -->
+                <div class="text-center mb-10">
+                    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Términos de Servicio</h1>
+                    <p class="text-gray-600 italic"><strong>Última Actualización:</strong> Noviembre 2026</p>
+                </div>
+
+                <!-- Introduction -->
+                <div class="mb-10">
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Bienvenido a Easescan. Estos Términos de Servicio ("Términos") rigen el uso de la aplicación móvil Easescan (la "Aplicación"), el escáner de hardware Bluetooth OBD-II Easescan (el "Hardware") y cualquier servicio en línea asociado (colectivamente, los "Servicios") proporcionados por Mastertech CA, Inc. ("nosotros", "nuestro" o "la Compañía").
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Al descargar la Aplicación, escanear un Código de Activación o usar nuestro Hardware, usted acepta quedar sujeto a estos Términos. Si no está de acuerdo, no use los Servicios.
+                    </p>
+                </div>
+
+                <!-- Section 1 -->
+                <div class="mb-10">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                        <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm">1</span>
+                        Descripción del Servicio
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        Easescan proporciona la recuperación de datos de diagnóstico automotriz conectando un dispositivo de hardware Bluetooth Easescan con licencia al puerto OBD-II de su vehículo. La Aplicación lee Códigos de Problemas de Diagnóstico (DTC), datos de sensores en vivo y proporciona sugerencias de diagnóstico con IA a través de nuestras integraciones en la nube.
+                    </p>
+                </div>
+
+                <!-- Section 2 -->
+                <div class="mb-10">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                        <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm">2</span>
+                        Licencia y Activación
+                    </h2>
+                    <div class="space-y-4">
+                        <div class="bg-blue-50 border-l-4 border-blue-600 p-4">
+                            <h3 class="font-semibold text-gray-900 mb-2">Vinculación de Hardware</h3>
+                            <p class="text-gray-700">La Aplicación requiere un dispositivo de hardware Easescan legítimo para funcionar. La activación de la Aplicación requiere escanear un código QR oficial proporcionado en el empaque de su Hardware.</p>
+                        </div>
+                        <div class="bg-yellow-50 border-l-4 border-yellow-600 p-4">
+                            <h3 class="font-semibold text-gray-900 mb-2">Anti-Fraude y Revocación</h3>
+                            <p class="text-gray-700">El Código de Activación vincula el número de serie específico de su Hardware a su Cuenta de Google. Nos reservamos el derecho de revocar, suspender o bloquear el acceso a los Servicios si detectamos clonación de hardware, distribución no autorizada de Códigos de Activación o elusión de nuestros sistemas de seguridad (por ejemplo, App Check o suplantación de handshake Bluetooth).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3 -->
+                <div class="mb-10">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                        <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm">3</span>
+                        Seguridad y Uso Adecuado
+                    </h2>
+                    <div class="space-y-4">
+                        <div class="bg-red-50 border-l-4 border-red-600 p-4">
+                            <h3 class="font-semibold text-gray-900 mb-2">No Usar Mientras Conduce</h3>
+                            <p class="text-gray-700">La Aplicación está diseñada solo para fines de diagnóstico. Operar un dispositivo móvil mientras conduce es peligroso e ilegal en muchas jurisdicciones. Usted acepta usar la Aplicación e interactuar con sus pantallas (incluidos los datos en vivo y las sugerencias de IA) solo cuando el vehículo esté estacionado de manera segura.</p>
+                        </div>
+                        <div class="bg-gray-50 border-l-4 border-gray-600 p-4">
+                            <h3 class="font-semibold text-gray-900 mb-2">Integridad del Vehículo</h3>
+                            <p class="text-gray-700">Usted es responsable de asegurar que el Hardware esté conectado de manera segura al puerto OBD-II y no interfiera con los pedales o la dirección del vehículo.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 4 -->
+                <div class="mb-10">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                        <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm">4</span>
+                        Información de Diagnóstico y Características de IA
+                    </h2>
+                    <div class="space-y-4">
+                        <div class="bg-purple-50 border-l-4 border-purple-600 p-4">
+                            <h3 class="font-semibold text-gray-900 mb-2">Sin Garantía Mecánica</h3>
+                            <p class="text-gray-700">Los DTC, datos de sensores e informes de diagnóstico con IA ("Soporte IA") proporcionados por la Aplicación son solo para fines informativos. No constituyen asesoramiento mecánico profesional.</p>
+                        </div>
+                        <div class="bg-gray-50 border-l-4 border-gray-600 p-4">
+                            <h3 class="font-semibold text-gray-900 mb-2">Precisión</h3>
+                            <p class="text-gray-700">No garantizamos la precisión absoluta, integridad o confiabilidad de los datos recuperados de la ECU de su vehículo ni las sugerencias generadas por la IA en la nube. Siempre debe consultar a un mecánico certificado antes de realizar reparaciones significativas o costosas en su vehículo basándose en el resultado de la Aplicación.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 5 -->
+                <div class="mb-10">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                        <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm">5</span>
+                        Cuentas de Usuario y Privacidad
+                    </h2>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-3 mt-1">•</span>
+                            <span>Para usar los Servicios, debe iniciar sesión usando una Cuenta de Google válida.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-3 mt-1">•</span>
+                            <span>Su privacidad es importante para nosotros. La información sobre cómo recopilamos, usamos y le permitimos eliminar permanentemente sus datos (incluida su dirección de correo electrónico e ID de Usuario) está disponible en nuestra <a href="privacy-es.html" class="text-blue-600 hover:underline">Política de Privacidad y Eliminación de Datos</a>.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Section 6 -->
+                <div class="mb-10">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                        <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm">6</span>
+                        Descargos de Responsabilidad y Limitación de Responsabilidad
+                    </h2>
+                    <div class="space-y-4">
+                        <div class="bg-orange-50 border-l-4 border-orange-600 p-4">
+                            <h3 class="font-semibold text-gray-900 mb-2">Base "TAL CUAL"</h3>
+                            <p class="text-gray-700">Los Servicios y el Hardware se proporcionan "tal cual" sin ninguna garantía, expresa o implícita, incluyendo pero no limitado a garantías implícitas de comerciabilidad o idoneidad para un propósito particular.</p>
+                        </div>
+                        <div class="bg-orange-50 border-l-4 border-orange-600 p-4">
+                            <h3 class="font-semibold text-gray-900 mb-2">Limitación de Responsabilidad</h3>
+                            <p class="text-gray-700">En la máxima medida permitida por la ley, Mastertech CA, Inc. no será responsable de ningún daño directo, indirecto, incidental, especial o consecuente (incluyendo daño al vehículo, lesión personal o pérdida de ganancias) que surja del uso de, o incapacidad para usar, los Servicios o Hardware.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 7 -->
+                <div class="mb-10">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                        <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm">7</span>
+                        Modificaciones de los Términos
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        Nos reservamos el derecho de modificar estos Términos en cualquier momento. Le notificaremos de cualquier cambio material publicando los nuevos Términos en esta página y actualizando la fecha de "Última Actualización". El uso continuado de los Servicios después de dichas modificaciones constituye su aceptación de los Términos revisados.
+                    </p>
+                </div>
+
+                <!-- Section 8 -->
+                <div class="mb-10">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                        <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm">8</span>
+                        Contáctenos
+                    </h2>
+                    <div class="bg-gray-50 rounded-lg p-6 text-center">
+                        <p class="text-gray-700 mb-2">Si tiene alguna pregunta sobre estos Términos, contáctenos en:</p>
+                        <p class="text-gray-700">
+                            <a href="mailto:info@easescan.com" class="text-blue-600 hover:underline font-medium">info@easescan.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-4">
+                <div>
+                    <div class="text-blue-400 font-bold text-2xl mb-2" style="font-family: 'Audiowide', cursive;">Easescan</div>
+                    <p class="text-gray-400">Escaneo automotriz fácil para todos. Diagnostique su vehículo con confianza.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-2">Enlaces Rápidos</h3>
+                    <ul class="space-y-1">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Inicio</a></li>
+                        <li><a href="index.html#features" class="text-gray-400 hover:text-white transition">Características</a></li>
+                        <li><a href="index.html#download" class="text-gray-400 hover:text-white transition">Descargar</a></li>
+                        <li><a href="index.html#faq" class="text-gray-400 hover:text-white transition">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-2">Legal</h3>
+                    <ul class="space-y-1">
+                        <li><a href="privacy-es.html" class="text-gray-400 hover:text-white transition">Política de Privacidad</a></li>
+                        <li><a href="delete-account-es.html" class="text-gray-400 hover:text-white transition">Eliminar Cuenta</a></li>
+                        <li><a href="terms-of-service-es.html" class="text-gray-400 hover:text-white transition">Términos de Servicio</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-6 pt-6 text-center text-gray-400">
+                <p>&copy; 2026 Mastertech CA, Inc. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Language switcher
+        function switchLanguage(lang) {
+            if (lang === 'en') {
+                window.location.href = 'terms-of-service.html';
+            } else if (lang === 'es') {
+                window.location.href = 'terms-of-service-es.html';
+            } else if (lang === 'fr') {
+                window.location.href = 'terms-of-service-fr.html';
+            }
+        }
+    </script>
+</body>
+</html>
