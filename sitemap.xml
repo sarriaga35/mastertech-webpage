@@ -128,4 +128,36 @@
         <xhtml:link rel="alternate" hreflang="fr" href="https://www.easescan.com/terms-of-service-fr" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://www.easescan.com/terms-of-service" />
     </url>
+
+    <!-- Demo Activation Pages -->
+    <url>
+        <loc>https://www.easescan.com/demo-activation</loc>
+        <lastmod>2026-11-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.easescan.com/demo-activation" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.easescan.com/demo-activation-es" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.easescan.com/demo-activation-fr" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.easescan.com/demo-activation" />
+    </url>
+    <url>
+        <loc>https://www.easescan.com/demo-activation-es</loc>
+        <lastmod>2026-11-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.easescan.com/demo-activation" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.easescan.com/demo-activation-es" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.easescan.com/demo-activation-fr" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.easescan.com/demo-activation" />
+    </url>
+    <url>
+        <loc>https://www.easescan.com/demo-activation-fr</loc>
+        <lastmod>2026-11-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.easescan.com/demo-activation" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.easescan.com/demo-activation-es" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.easescan.com/demo-activation-fr" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.easescan.com/demo-activation" />
+    </url>
 </urlset>

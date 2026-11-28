@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Activation Démo Easescan - Scannez le code QR ou entrez le code d'activation manuellement pour commencer à utiliser Easescan en mode démo.">
+    <meta name="keywords" content="Easescan, activation démo, code QR, code d'activation, scanner OBD2">
+    <title>Activation Démo - Easescan</title>
+    <link rel="canonical" href="https://www.easescan.com/demo-activation-fr" />
+    <link rel="alternate" hreflang="en" href="https://www.easescan.com/demo-activation" />
+    <link rel="alternate" hreflang="es" href="https://www.easescan.com/demo-activation-es" />
+    <link rel="alternate" hreflang="fr" href="https://www.easescan.com/demo-activation-fr" />
+    <link rel="alternate" hreflang="x-default" href="https://www.easescan.com/demo-activation" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="/" class="text-blue-600 font-bold" style="font-family: 'Audiowide', cursive; font-size: 30px;">Easescan</a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="/" class="text-gray-700">Accueil</a>
+                    <a href="/#features" class="text-gray-700">Fonctionnalités</a>
+                    <a href="/#download" class="text-gray-700">Télécharger</a>
+                    
+                    <!-- Language Selector -->
+                    <div class="flex items-center space-x-2 ml-4">
+                        <button onclick="switchLanguage('en')" class="px-3 py-1 rounded bg-gray-200 text-gray-700 text-sm">EN</button>
+                        <button onclick="switchLanguage('es')" class="px-3 py-1 rounded bg-gray-200 text-gray-700 text-sm">ES</button>
+                        <button onclick="switchLanguage('fr')" class="px-3 py-1 rounded bg-blue-600 text-white text-sm">FR</button>
+                    </div>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 py-3 space-y-2">
+                <a href="/" class="block text-gray-700 hover:text-blue-600">Accueil</a>
+                <a href="/#features" class="block text-gray-700 hover:text-blue-600">Fonctionnalités</a>
+                <a href="/#download" class="block text-gray-700 hover:text-blue-600">Télécharger</a>
+                <div class="flex space-x-2 pt-2">
+                    <button onclick="switchLanguage('en')" class="px-3 py-1 rounded bg-gray-200 text-gray-700 text-sm">EN</button>
+                    <button onclick="switchLanguage('es')" class="px-3 py-1 rounded bg-gray-200 text-gray-700 text-sm">ES</button>
+                    <button onclick="switchLanguage('fr')" class="px-3 py-1 rounded bg-blue-600 text-white text-sm">FR</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="bg-white rounded-lg shadow-lg p-8 md:p-12">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Activation Démo</h1>
+            <p class="text-gray-600 text-center mb-8 max-w-2xl mx-auto">
+                Utilisez l'application Easescan pour scanner le code QR ci-dessous ou entrez manuellement le code d'activation pour commencer à utiliser Easescan en mode démo. Cela authentifiera votre session et simulera le matériel Bluetooth OBD2 physique.
+            </p>
+            
+            <div class="flex flex-col items-center">
+                <div class="border-2 border-dashed border-blue-500 p-6 rounded-xl bg-blue-50 mb-8">
+                    <img src="Images/qr-demo_DEMO2026.png" alt="Code QR Démo Easescan" class="w-64 h-64 md:w-80 md:h-80 object-contain">
+                </div>
+                
+                <div class="text-center">
+                    <p class="text-lg font-semibold text-gray-700 mb-3">Code d'Activation:</p>
+                    <div class="inline-block bg-gray-100 px-6 py-4 rounded-lg border-2 border-gray-300">
+                        <span class="font-mono text-2xl md:text-3xl font-bold tracking-wider text-blue-600">DEMO2026</span>
+                    </div>
+                </div>
+                
+                <div class="mt-8 text-center">
+                    <p class="text-gray-500 text-sm">
+                        <strong>Instructions:</strong> Ouvrez l'application Easescan, allez à l'écran d'activation et scannez ce code QR ou entrez le code ci-dessus manuellement.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-8 text-center">
+            <a href="/" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+                Retour à l'Accueil
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-center md:text-left mb-4 md:mb-0">
+                    <p class="text-gray-400">© 2026 Mastertech CA, Inc. Tous droits réservés.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="/privacy-fr" class="text-gray-400 hover:text-white transition">Politique de Confidentialité</a>
+                    <a href="/terms-of-service-fr" class="text-gray-400 hover:text-white transition">Conditions d'Utilisation</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        // Language switcher
+        function switchLanguage(lang) {
+            if (lang === 'en') {
+                window.location.href = '/demo-activation';
+            } else if (lang === 'es') {
+                window.location.href = '/demo-activation-es';
+            } else if (lang === 'fr') {
+                window.location.href = '/demo-activation-fr';
+            }
+        }
+    </script>
+</body>
+</html>
